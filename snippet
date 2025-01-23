@@ -1,0 +1,15 @@
+<?php
+/**
+ * Redirect non-logged-in users only to another link for a specific course ID.
+ */
+add_action( 'template_redirect', function() {
+    // Specify the course ID for which the redirection should occur.
+    $target_course_id = 123; // Replace 123 with your specific course ID.
+
+    // Check if the current user is not logged in and if the course ID matches.
+    if ( ! is_user_logged_in() && is_singular( 'sfwd-courses' ) && get_the_ID() === $target_course_id ) {
+        // Replace the https://www.google.com for the redirection
+        wp_redirect( 'https://www.google.com' );
+        exit; 
+    }
+} );
