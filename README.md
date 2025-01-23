@@ -11,6 +11,7 @@ This snippet redirects visitors who are not logged in to WordPress to another li
 ### Installation
 
 1. Copy the snippet code below:
+```php
 <?php
 /**
  * Redirect non-logged-in users only to another link for a specific course ID.
@@ -26,7 +27,7 @@ add_action( 'template_redirect', function() {
         exit; 
     }
 } );
-    ```
+  ```
 2. Paste the code into one of the following:
     - Your theme's `functions.php` file.
     - A custom plugin file.
