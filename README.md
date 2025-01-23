@@ -1,4 +1,4 @@
-# Redirect Non-Logged-In Users to Google for a Specific LearnDash Course
+# Redirect Non-Logged-In Users to Another Link for a Specific LearnDash Course
 
 This snippet redirects visitors who are not logged in to WordPress to another link when they attempt to access a specific LearnDash course.
 
